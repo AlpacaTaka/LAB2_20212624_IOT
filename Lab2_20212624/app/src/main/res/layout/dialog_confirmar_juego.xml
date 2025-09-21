@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="@drawable/dialog_background"
+    android:layout_gravity="center">
+
+    <!-- Icono de pregunta -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:src="@android:drawable/ic_dialog_alert"
+        android:contentDescription="Icono de confirmación"
+        android:tint="@color/purple_700" />
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Está seguro que desea volver a Jugar?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:lineSpacingExtra="4dp" />
+
+    <!-- Botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Botón No -->
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="No"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="@color/gray_400"
+            android:textColor="@color/white"
+            android:elevation="4dp" />
+
+        <!-- Botón Sí -->
+        <Button
+            android:id="@+id/btnSi"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="Sí"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@color/white"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
